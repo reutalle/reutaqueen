@@ -1,0 +1,82 @@
+<!DOCTYPE html><!-- HTML הגדרת מסמך -->
+<html lang="en"><!-- תג המציין את השפה של המסמך, במקרה זה אנגלית -->
+<head><!--ראש המסמך-->
+    <meta charset="UTF-8"><!--המאפשר הצגת תווים בכל השפות UTF-8-קידוד התווים במסמך, במקרה פה הקידוד מוגדר כ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Internet Explorer הגדרת עדיפות דפדפן, במקרה הזה לדפדפן -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--הגדרת תצוגת העמוד על מסכים ניידים-->
+    <title>Gallery</title><!--כותרת העמוד-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--Bootstrap של CSS קישור לקובץ -->
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><!--Font Awesome של CSS קישור לקובץ  -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css"><!--המותאם לדף CSS קישור לקובץ -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><!--עם סגנון ניווט מורחב, ברוחב גדול במסך ועם רקע בהיר Navbar הגדרת ה -->
+        <a class="navbar-brand" href="#">IOT Irrigation System</a><!--קישור לדף הראשי בתור לוגו או שם האתר-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--כפתור התפריט, משמש להצגת תפריט הניווט במסך קטן-->
+            <span class="navbar-toggler-icon"></span>
+        </button><!--סיום הכפתור-->
+        <div class="collapse navbar-collapse" id="navbarNav"><!--אזור התפריט, מכיל את כל פרטי התפריט-->
+            <ul class="navbar-nav ml-auto"><!-- רשימת פרטי התפריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="homepage.html"><i class="fas fa-home"></i> Home</a><!--קישור לדף הראשי עם אייקון של בית-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="about us.html"><i class="fas fa-info-circle"></i> About us</a><!--קישור לדף אודות עם אייקון של מידע-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a><!--קישור לדף גלריה עם אייקון של תמונות-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact us</a><!--קישור לדף יצירת קשר עם אייקון של מייל-->
+                </li><!--סיום פריט-->
+            </ul><!--סיום הרשימה-->
+        </div><!--סיום התפריט-->
+    </nav><!--Navbar סיום הגדרת ה-->
+
+    <!-- Content Section -->
+    <div class="container mt-4"><!--תיבת עיצוב ראשית עם מרווח של 4 יחידות-->
+        <h1 class="text-center">Gallery</h1><!--כותרת ראשית לעמוד הממוקמת במרכז-->
+
+        <div class="row justify-content-center"><!--שורת תמונות המיושרת במרכז-->
+            <div class="col-md-4"><!--תיבת תמונה יחידה בגודל מדיום-->
+                <img src="IMAGES/images (1).jpg" alt="" class="img-fluid mb-3"><!--תמונה 1, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 3 יחידות בין כל תמונה-->
+            </div>
+            <div class="col-md-4"><!--תיבת תמונה יחידה בגודל מדיום-->
+                <img src="IMAGES/images (2).jpg" alt="" class="img-fluid mb-3"><!--תמונה 2, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 3 יחידות בין כל תמונה-->
+            </div>
+            <div class="col-md-4"><!--תיבת תמונה יחידה בגודל מדיום-->
+                <img src="IMAGES/images.jpg" alt="" class="img-fluid mb-3"><!--תמונה 3, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 3 יחידות בין כל תמונה-->
+            </div>
+            <div class="col-md-4"><!--תיבת תמונה יחידה בגודל מדיום-->
+                <img src="IMAGES/cd447a2ccb-2213-4835-b101-607058aa42b3.jpg" alt="" class="img-fluid mb-3"><!--תמונה 4, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 3 יחידות בין כל תמונה-->
+            </div>
+        </div>
+
+        <h2 class="siso text-center mt-4"><!--כותרת ראשית של הרשימה הממוקמת באמצע עם רווח של 4 יחידות-->
+            Links for Images
+            <a href="https://www.kolbogan.co.il/blog/%D7%9E%D7%A2%D7%A8%D7%9B%D7%95%D7%AA-%D7%94%D7%A9%D7%A7%D7%99%D7%99%D7%94" class="btn btn-primary ml-2">Link1</a><!--קישור 1, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 2 יחידות בין כל קישור-->
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.globes.co.il%2Fnews%2Farticle.aspx%3Fdid%3D1001314107&psig=AOvVaw1VBEJ8FqsGlhTiTCs--uqI&ust=1686760669351000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCICDuLXXwP8CFQAAAAAdAAAAABAP" class="btn btn-primary ml-2">Link2</a><!--קישור 2, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 2 יחידות בין כל קישור-->
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbanias-shop.co.il%2F%25D7%259E%25D7%2593%25D7%25A8%25D7%2599%25D7%259A-%25D7%259C%25D7%2592%25D7%25A0%25D7%259F-%25D7%2594%25D7%259E%25D7%25AA%25D7%2597%25D7%2599%25D7%259C%2F&psig=AOvVaw1VBEJ8FqsGlhTiTCs--uqI&ust=1686760669351000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCICDuLXXwP8CFQAAAAAdAAAAABAc" class="btn btn-primary ml-2">Link3</a><!--קישור 3, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 2 יחידות בין כל קישור-->
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pro.co.il%2Fgardners%2Fpricing%2Fautomatic-irrigation-system-installation&psig=AOvVaw32lm2720B7Ju4Jg4jWHngn&ust=1686760920995000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCIC_s63YwP8CFQAAAAAdAAAAABAK" class="btn btn-primary ml-2">Link4</a><!--קישור 4, מוגדרת בגודל התיבה בה היא מופיעה והגדרת מרווח של 2 יחידות בין כל קישור-->
+        </h2>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><!--JavaScript  הפעלת ספרייה אשר משפרת תכונות ועוזרת בכתיבת קוד של -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script><!--Bootstrap הפעלת ספרייה המשמשת לניהול חלונות קופצים, ליישום הצגת פופאים ומיקום תפריטים מתקדם ב -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script><!--הפעלת ספרייה המספקת פונקציות נוספות ותכונות עיצוב נוספות-->
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script><!--Firebase הכנסת הספרייה אל דף האינטרנט של האתר, דבר המאפשר גישה לשירותי התוכנה של -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script><!--הכנסת הספרייה לדף האינטרנט של האתר, דבר המספק כלים לניהול משתמשים-->
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-database-compat.js"></script><!--באופן יעיל Firebase הכנסת הספרייה אל דף האינטרנט של האתר, דבר המאפשר שמירה וקריאה מבסיס הנתונים של -->
+    <!-- Add more Firebase scripts if needed -->
+
+    <!-- Your custom script -->
+    <script src="JAVA/koren.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html><!-- HTML הגדרת מסמך -->
+<html lang="en"><!-- תג המציין את השפה של המסמך, במקרה זה אנגלית -->
+<head><!--ראש המסמך-->
+    <meta charset="UTF-8"><!--המאפשר הצגת תווים UTF-8-קידוד התווים במסמך, במקרה פה הקידוד מוגדר כ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Internet Explorer הגדרת עדיפות דפדפן, במקרה הזה לדפדפן -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--הגדרת תצוגת העמוד על מסכים ניידים-->
+    <title>IOT Irrigation System</title><!--כותרת העמוד-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--Bootstrap של CSS קישור לקובץ -->
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><!--Font Awesome של CSS קישור לקובץ  -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css"><!--המותאם לדף CSS קישור לקובץ -->
+</head><!--סיום ראש מסמך-->
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><!--עם סגנון ניווט מורחב, ברוחב גדול במסך ועם רקע בהיר Navbar הגדרת ה -->
+        <a class="navbar-brand" href="#">IOT Irrigation System</a><!--קישור לדף הראשי בתור לוגו או שם האתר-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--כפתור התפריט, משמש להצגת תפריט הניווט במסך קטן-->
+            <span class="navbar-toggler-icon"></span>
+        </button><!--סיום הכפתור-->
+        <div class="collapse navbar-collapse" id="navbarNav"><!--אזור התפריט, מכיל את כל פרטי התפריט-->
+            <ul class="navbar-nav ml-auto"><!-- רשימת פרטי התפריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="homepage.html"><i class="fas fa-home"></i> Home</a><!--קישור לדף הראשי עם אייקון של בית-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="about us.html"><i class="fas fa-info-circle"></i> About us</a><!--קישור לדף אודות עם אייקון של מידע-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a><!--קישור לדף גלריה עם אייקון של תמונות-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact us</a><!--קישור לדף יצירת קשר עם אייקון של מייל-->
+                </li><!--סיום פריט-->
+            </ul><!--סיום הרשימה-->
+        </div><!--סיום התפריט-->
+    </nav><!--Navbar סיום הגדרת ה-->
+        <div class="text-center"><!-- הגדרת תיבת טסקט הממרכזת את הטקסט שבתוכה-->
+            <p class="koteret">IOT Irrigation System</p><!--ככותרת IOT Irrigation System  מציג את הטקס -->
+            <img src="/data/HTML/IMAGES/c31-shutterstock_703676914800x392.2019221T154908.jpg" class="img-fluid" id="img1"><!--הצגת התמונה-->
+        </div><!--סיום הגדרת תיבת הטקסט-->
+       <!-- Content Section -->
+    <div class="container mt-4"><!--הגדרת תיבת הטקסט עם רווחים-->
+        <div id="allBtns" class="text-center mb-4"><!--הגדרת תיבת טקסט המרכזת את התוכן בתוכה ומוסיפה מרווח בתחתית-->
+<!--כפתורי כיבוי והדלקה של המשאבה-->
+            <!-- Power Buttons Group -->
+            <div class="btn-group" role="group" aria-label="Power Buttons"><!--Power Buttons הגדרת קבוצת כפתורים בשם -->
+                <button class="btn btn-primary" id="sendButton" onclick="changeValue(1)"><!--הגדרת כפתור להפעלת המכשיר- ב '1' לוגי המכשיר פועל-->
+                    <i class="fas fa-power-off"></i> Turn On
+                </button><!--סיום הגדרת הכפתור הפעלה-->
+                <button class="btn btn-danger" id="turnOffButton" onclick="changeValue(0)"><!--הגדרת כפתור לכיבוי המכשיר- ב '0' המכשיר כבוי-->
+                    <i class="fas fa-power-off"></i> Turn Off
+                </button><!--סיום הגדרת הכפתור-->
+            </div><!--סיום הגדרת קבוצת הכפתורים-->
+<!--יצירת סרגל הערכים להפעלה אוטומטית של החיישן  לחות-->
+            <!-- Humidity Control -->
+            <div class="mt-3"><!--הגדרת תיבת טקסט עם מרווח של 3-->
+                <label for="customRange3" class="form-label">Humidity Value</label><!--ציון תווית קלט עם כינוי עבור השדה המקושר לה-->
+                <input type="range" class="form-range" min="0" max="15" step="1" id="customRange3"
+                    oninput="updateSliderValue(this.value)"><!--הגדרת שדה קלט מסוג סרגל החלקה עם ערכים בין 0-15 בהתאמה, הפונקציה פועלת בעת שינוי הסרגל-->
+                <p id="sliderValue">Selected Value: 0</p><!--ציון הערך הנקלט בסרגל, הברירת מחדל היא 0-->
+            </div><!--סיום הגדרת תיבת הטקסט-->
+
+            <!-- Submit Button -->
+            <div class="mt-3"><!--הגדרת תיבת טקסט עם מרווח של 3-->
+                <button class="btn btn-success" onclick="changeValue('changeHumidity')"><!--changeHumidity עם הארגומנט changeValue ייצור כפתור המקושר לפונקצייה -->
+                    <i class="fas fa-check"></i> ENTER<!--Font Awesome מציין אייקון של סימן מתוך ספריית הסמלים של .-->
+                </button><!--סיום הגדרת הכפתור-->
+                <div id="errorInput" class="mt-2" style="color: red;"></div><!--הגדרת תיבת טקסט בה תוצג הודעת שגיאה במידה ויש שגיאה בהזנת הנתונים-->
+            </div><!--סיום הגדרת תיבת הטקסט-->
+
+        </div>
+    </div>
+
+    
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><!--JavaScript  הפעלת ספרייה אשר משפרת תכונות ועוזרת בכתיבת קוד של -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script><!--Bootstrap הפעלת ספרייה המשמשת לניהול חלונות קופצים, ליישום הצגת פופאים ומיקום תפריטים מתקדם ב -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script><!--הפעלת ספרייה המספקת פונקציות נוספות ותכונות עיצוב נוספות-->
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script><!--Firebase הכנסת הספרייה אל דף האינטרנט של האתר, דבר המאפשר גישה לשירותי התוכנה של -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script><!--הכנסת הספרייה לדף האינטרנט של האתר, דבר המספק כלים לניהול משתמשים-->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script><!--באופן יעיל Firebase הכנסת הספרייה אל דף האינטרנט של האתר, דבר המאפשר שמירה וקריאה מבסיס הנתונים של -->
+    <script src="Mainjs.js"></script><!--לפעולת הדף Mainjs.js מכניס את הקובץ -->
+    <!-- Add more Firebase scripts if needed -->
+
+    <!-- Your custom script -->
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;/* עיצוב התצוגה בצבע לבן */
+    font-family: 'Arial', sans-serif;/* הגדרת הטקסט בגופן אריאל */
+}
+
+.container {
+    margin-top: 20px;/* מגדירים מרווח עליון */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #3498db;/* עיצוב התצוגה בצבע תכלת */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white;/*הגדרת גוון הטקסט של האלמנטים המקושרים כצבע לבן */
+}
+
+.navbar-toggler-icon {
+    background-color: white;/* הגדרת צבע הרקע של סמל הניווט כלבן*/
+}
+
+/* Button Styles */
+.btn {
+    margin: 5px;/*הגדרת מרווח של 5 פיקסלים בין כל כפתור לאלמנטים שמסביבו*/
+}
+
+.btn-primary {
+    background-color: #3498db;/*הגדרת צבע הרקע של כל הכפתורים בקבוצה כתכלת*/
+    border-color: #3498db;/* הגדרת צבע המסגרת כתכלת*/
+}
+
+.btn-danger {
+    background-color: #e74c3c;/*הגדרת צבע הרקע של כל הכפתורים בקבוצה כאדום*/
+    border-color: #e74c3c;/* הגדרת צבע המסגרת כאדום*/
+}
+
+.btn-success {
+    background-color: #2ecc71;/*הגדרת צבע הרקע של כל הכפתורים בקבוצה כירוק*/
+    border-color: #2ecc71;/* הגדרת צבע המסגרת כירוק*/
+}
+
+/* Input Styles */
+.form-control {
+    margin: 5px;/* הגדרת רווח של 5 פיקסלים בין כל אלמנט בקבוצה*/
+}
+
+/* Error Message Styles */
+#errorInput {
+    margin-top: 10px;/*הגדרת רווח של 10 פיקסלים לאלמנט*/
+}
+
+/* Content Section Styles */
+.text-center {
+    text-align: center;/* הגדרת יישום המרכוז של הטקסט בתוך אלמנט במרכז האופקי שלו*/
+}
+
+.koteret {
+    font-size: 30px;/*הגדרת גודל הטקסט כ30 פיקסלים*/
+    color: #3498db;/*הגדרת צבע הטקסט כתכלת*/
+}
+
+.img-fluid {
+    border-radius: 10px;/*הגדרת עיגול פינות התמונה עם רדיוס של 10 פיקסלים*/
+    margin-top: 20px;/*הגדרת רווח של 20 פיקסלים לתמונה*/
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {/*עיצובים ספצייפים עבור מסכים קטנים, יכול רק על מסכים שרוחב עד 767 פיקסלים*/
+    .navbar-nav {
+        margin: 10px;/*הגדרת רווח של 10 פיקסלים*/
+    }
+
+    .container {
+        margin-top: 60px;/*הגדרת המרווח העליון של כל האלמנט בקבוצה כ-60 */
+    }
+}

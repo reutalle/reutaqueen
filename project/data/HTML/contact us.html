@@ -1,0 +1,131 @@
+<!DOCTYPE html><!-- HTML הגדרת מסמך -->
+<html lang="en"><!-- תג המציין את השפה של המסמך, במקרה זה אנגלית -->
+<head><!--ראש המסמך-->
+    <meta charset="UTF-8"><!--המאפשר הצגת תווים בכל השפות UTF-8-קידוד התווים במסמך, במקרה פה הקידוד מוגדר כ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Internet Explorer הגדרת עדיפות דפדפן, במקרה הזה לדפדפן -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--הגדרת תצוגת העמוד על מסכים ניידים-->
+    <title>Contact Us</title><!--כותרת העמוד-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--Bootstrap של CSS קישור לקובץ -->
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><!--Font Awesome של CSS קישור לקובץ  -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css"><!--המותאם לדף CSS קישור לקובץ -->
+    <style>
+
+        .container {/*הגדרת עיצוב התיבה הראשית באתר*/
+            padding: 50px;/* הגדרת מרווח פנימי של 50 פיקסלים*/
+            border-radius: 15px;/*הגדרת פינות מעוגלות ברדיוס של 15 פיקסלים*/
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);/*עיצוב התפריט בראש האתר, במקרה פה מגדירים צבע רקע כלבן עם שקיפות של 0.8*/
+        }
+
+        .giff {/*הגדרת עיצוב התמונה*/
+            width: 200px;/*הגדרת רוחב התמונה כ-200 פיקסלים*/
+            height: 150px;/*הגדרת גובה התמונה כ-150 פיקסלים*/
+            margin: 20px;/*הגדרת מרווח של 20 פיקסלים מסביב לתמונה*/
+        }
+
+        .siso {/* הגדרת עיצוב התיבה*/
+            border: 1px solid white;/*קו מתאר בצבע לבן בגודל של פיקסל אחד*/
+            padding: 20px;/*הגדרת מרווח פנימי של 20 פיקסלים*/
+            border-radius: 10px;/*הגדרת פינות מעוגלות ברדיוס של 10 פיקסלים*/
+            margin-top: 20px;/*הגדרת הרווח העליון כ-20*/
+        }
+
+        #SignOut {
+            margin-top: 20px;/*הגדרת הרווח העליון כ-20*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><!--עם סגנון ניווט מורחב, ברוחב גדול במסך ועם רקע בהיר Navbar הגדרת ה -->
+        <a class="navbar-brand" href="#">IOT Irrigation System</a><!--קישור לדף הראשי בתור לוגו או שם האתר-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--כפתור התפריט, משמש להצגת תפריט הניווט במסך קטן-->
+            <span class="navbar-toggler-icon"></span>
+        </button><!--סיום הכפתור-->
+        <div class="collapse navbar-collapse" id="navbarNav"><!--אזור התפריט, מכיל את כל פרטי התפריט-->
+            <ul class="navbar-nav ml-auto"><!-- רשימת פרטי התפריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="homepage.html"><i class="fas fa-home"></i> Home</a><!--קישור לדף הראשי עם אייקון של בית-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="about us.html"><i class="fas fa-info-circle"></i> About us</a><!--קישור לדף אודות עם אייקון של מידע-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a><!--קישור לדף גלריה עם אייקון של תמונות-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--פריט בתפריט-->
+                    <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact us</a><!--קישור לדף יצירת קשר עם אייקון של מייל-->
+                </li><!--סיום פריט-->
+            </ul><!--סיום הרשימה-->
+        </div><!--סיום התפריט-->
+    </nav><!--Navbar סיום הגדרת ה-->
+
+    <!-- Content Section -->
+    <div class="container mt-4"><!--יצירת תיבת תוכן ראשית בעמוד עם רווח עליון של 4 יחידות-->
+        <h1 id="koteretgallery">Contact Us</h1><!--הגדרת הכותרת הראשית של העמוד-->
+        <p id="text">If you want to start the purchase process, enter your details.</p><!--פסקת טקסט המסבירה למשתמש מה יש בעמוד-->
+
+        <div class="text-center"><!--תיבת תוכן השמה את האלמנטים שבתוכה במרכז-->
+            <img class="giff" src="IMAGES/talhibelgif.gif" alt="GIF 1"><!--תמונה 1-->
+            <img class="giff" src="IMAGES/talhibelisgaygif2.gif" alt="GIF 2"><!--תמונה 2-->
+        </div>
+
+        <div class="siso text-center mt-4"><!--יצירת תיבת תוכן ראשית בעמוד עם רווח עליון של 4 יחידות-->
+            <p style="text-decoration: underline; font-weight: 600;">Sign In</p><!--כותרת קטנה עם קו תחתון ואותיות מודגשות -->
+            <p>Please leave your information below so that we could contact you later:</p><!--פסקה המסבירה מה צריך למלא באתר-->
+            <label for="name">Name:</label><!--תווית של שם לתיבת טסקט בה המשתמש יוכל למלא את שמו-->
+            <input type="text" class="form-control" id="name" placeholder="Name" required><!--שדה קלט לתיבת טקסט, שם המשתמש נקלט פה-->
+            <label for="email">Email:</label><!--תווית של שם לתיבת טקסט בה המשתמש יוכל למלא את המייל שלו-->
+            <input type="email" class="form-control" id="email" placeholder="Email" required><!--שדה קלט לתיבת טקסט, המייל נקלט פה-->
+            <label for="pass">Password:</label><!--תווית של שם לתיבת טקסט בה המשתמש יוכל לרשום סיסמא-->
+            <input type="password" class="form-control" id="pass" placeholder="Password" required><!--שדה קלט לתיבת הטקסט, הסיסמא נקלטת פה-->
+            <button class="btn btn-primary" id="submit" onclick="createUserOnBB()">Submit</button><!--כפתור לשליחת הפרטים-->
+
+            <p style="text-decoration: underline; font-weight: 600;" class="mt-3">Login</p><!--כותרת קטנה עם קו תחתון ואותיות מודגשותת-->
+            <label for="email2">Email:</label><!--תוויל של שם לתיבת טקסט בה המשתמש יוכל למלא את המייל שלו-->
+            <input type="email" class="form-control" id="email2" placeholder="Email" required><!--שדה קלט לתיבת טקסט, המייל נקלט פה-->
+            <label for="pass2">Password:</label><!--תווית של שם לתיבת טקסט בה המשתמש יוכל לרשום סיסמא-->
+            <input type="password" class="form-control" id="pass2" placeholder="Password" required><!--שדה קלט לתיבת הטקסט, הסיסמא נקלטת פה-->
+            <button class="btn btn-primary" id="submit" onclick="login()">Submit</button><!--כפתור לשליחת הפרטים-->
+
+            <label for="signal_yes" class="mt-3">Your need our product for home use or farmland use?</label><br><!--שאלה למשתמש, מדוע הוא זקוק למוצר?, הגדרת רווח של 3 יחידות -->
+            <input type="radio" name="home">Home <br><!--בו המשתמש יוכל לבחור באפשרות בית radio שדה בעל סוג -->
+            <input type="radio" name="home">Farmland <br><!--בו המשתמש יוכל לבחור באפשרות חקלאות radio שדה בעל סוג -->
+            <p class="mt-3">What is the size of your farmland?</p> <br><!--שאלה המתארת את גודל השדה-->
+            <input type="checkbox" name="fem">Between 1m to 1km <br><!--המאפשר למשתמש לבחור במספר אפשרויות, במקרה זה בין 1 מטר ל-1 קילומטר checkbox שדה בעל סוג -->
+            <input type="checkbox" name="fem">Between 1km to 100km <br><!--המאפשר למשתמש לבחור במספר אפשרויות, במקרה זה בין 1 קילומטר ל-100 קילומטר checkbox שדה בעל סוג -->
+            <input type="checkbox" name="fem">Between 100km to 1000km <br><!--המאפשר למשתמש לבחור במספר אפשרויות, במקרה זה בין 100 קילומטר ל-1000 קילומטר checkbox שדה בעל סוג -->
+
+            <p>How many Irrigation Systems do you want to order?</p><!--שאלה למשתמש הבודקת כמה מוצרים הוא רוצה להזמען-->
+            <input type="number" class="form-control" min="1" max="99" value="0"><!--המאפשר למשתמש להזין מספר בין 1-99 number שדה קלט מסוג -->
+            <p>Do you need Shipping service?</p><!--שאלה למשתמש הבודקת אם הוא צריך משלוח-->
+            <select class="form-control" name="Shipping" id=""><!--המכיל אפשרויות שונות למשלוח select שדה בעל סוג -->
+                <option value="Shipping">Yes</option><!--אפשרות כן-->
+                <option value="Shipping">No</option><!--אפשרות לא-->
+                <option value="Shipping">Others</option><!--אפשרות אחרת-->
+            </select>
+        </div>
+
+        <p>Sign Out</p>
+        <button class="btn btn-primary" id="SignOut" onclick="SignOut()">Sign Out</button><!--בעצם פונקציית ההתנתקות ,SIGNOUT כפתור המפעית פונקציה בעת הלחיצה כל הכפתור -->
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><!--JavaScript  הפעלת ספרייה אשר משפרת תכונות ועוזרת בכתיבת קוד של -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script><!--Bootstrap הפעלת ספרייה המשמשת לניהול חלונות קופצים, ליישום הצגת פופאים ומיקום תפריטים מתקדם ב -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script><!--הפעלת ספרייה המספקת פונקציות נוספות ותכונות עיצוב נוספות-->
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script><!--Firebase הכנסת הספרייה אל דף האינטרנט של האתר, דבר המאפשר גישה לשירותי התוכנה של -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script><!--הכנסת הספרייה לדף האינטרנט של האתר, דבר המספק כלים לניהול משתמשים-->
+    <!-- Add more Firebase scripts if needed -->
+
+    <!-- Your custom script -->
+    <script src="java/koren.js"></script>
+</body>
+</html>
