@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity hight_sensor is
+port(hight :in integer range 0 to 4095;
+     hight_out: out integer range 0 to 3);
+	  
+end;
+
+architecture behave of hight_sensor is
+begin
+hight_out<=0 when hight<5 else
+           1 when hight<10 else
+		     2 when hight<15 else
+		     3;
+		
+end behave;		

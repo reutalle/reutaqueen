@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Make sure to link your custom CSS file -->
+
+    <!-- Additional styles specific to this page -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #3498db;
+        }
+
+        #koteretgallery {
+            color: #3498db;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #piska {
+            text-align: justify;
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        #tableABOUT {
+            margin: 20px auto;
+            width: 70%;
+            text-align: center;
+        }
+
+        #video {
+            width: 100%;
+            height: 400px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">IOT Irrigation System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about us.html"><i class="fas fa-info-circle"></i> About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+        <h1 id="koteretgallery">About Us</h1>
+        <p id="piska">
+            Our project is a smart irrigation system that refers to the measurement of soil moisture in several places and performs irrigation operations according to the result of the soil moisture sample.
+            The role of the system is to improve irrigation efficiency, save water and prevent unnecessary waste of resources.
+            The principle of operation of the system is automatic watering as soon as the moisture level in the soil has dropped beyond the predetermined value for the system.
+            The importance of the IOT in this project is expressed in the fact that it allows us to receive information in real time and to activate the system automatically and remotely based on the information received and the pre-defined parameters.
+        </p>
+        <table class="table" id="tableABOUT">
+          <thead>
+            <tr>
+              <th scope="col">The sensor type</th>
+              <th scope="col">The number of sensors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Water level sensor</td>
+              <td><p id="waterLevelSensor"></p></td>
+            </tr>
+            <tr>
+              <td>Soil moisture sensor</td>
+              <td><p id="soilMoistureSensor"></p></td>
+            </tr>
+            <tr>
+              <td>Ultrasonic sensor</td>
+              <td><p id="ultrasonicSensor"></p></td>
+            </tr>
+          </tbody>
+</tbody>
+</table>
+            </tr>
+            <tr>
+        </table>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script src="Mainjs.js"></script>

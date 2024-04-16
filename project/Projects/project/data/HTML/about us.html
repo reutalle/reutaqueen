@@ -1,0 +1,119 @@
+<!DOCTYPE html><!-- HTML הגדרת מסמך -->
+<html lang="en"><!-- תג המציין את השפה של המסמך, במקרה זה אנגלית -->
+<head><!--ראש המסמך-->
+    <meta charset="UTF-8"><!--המאפשר הצגת תווים בכל השפות UTF-8-קידוד התווים במסמך, במקרה פה הקידוד מוגדר כ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Internet Explorer הגדרת עדיפות דפדפן, במקרה הזה לדפדפן -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--הגדרת תצוגת העמוד על מסכים ניידים-->
+    <title>About Us</title><!--כותרת העמוד-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--Bootstrap של CSS קישור לקובץ -->
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><!--Font Awesome של CSS קישור לקובץ  -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Make sure to link your custom CSS file --><!--המותאם לדף CSS קישור לקובץ -->
+
+    <!-- Additional styles specific to this page -->
+    <style>
+        body {
+            background-color: #f8f9fa;/* הגדרת צבע רקע העמוד לגוון אפור בהיר*/
+        }
+
+        .navbar {
+            background-color: #3498db;/*הגדרת צבע רקע התפריט לתכלת*/
+        }
+
+        #koteretgallery {
+            color: #3498db;/*הגדרת צבע הטקסט לתכלת*/
+            text-align: center;/*הגדרת מיקום הטקסט במרכז*/
+            margin-top: 30px;/*הגדרת מרווח עליון של 30 פיקסלים*/
+        }
+
+        #piska {
+            text-align: justify;/*הגדרת הטקסט מיושר לימין ולשמאל*/
+            font-size: 18px;/*הגדרת גודל הטקסט כ-18 פיקסלים*/
+            margin: 20px;/*הגדרת רווח של 20 פיקסלים בכל  צד*/
+        }
+
+        #tableABOUT {
+            margin: 20px auto;/*הגדרת רווח של 20 פיקסלים*/
+            width: 70%;/*הגדרת הטבלה כ70 אחוז מרוחב העמוד*/
+            text-align: center;/* הגדרת הטבלה במרכז*/
+        }
+
+        #video {
+            width: 100%;/*הגדרת הוידאו כ100 אחוז מגודל רוחב האב*/
+            height: 400px;/*הגדרת הוידאו בגובה של 400 פיקסלים*/
+            margin: 20px 0;/*הגדרת רווח של 20 פיקסלים בכל  צד*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><!--עם סגנון ניווט מורחב, ברוחב גדול במסך ועם רקע בהיר Navbar הגדרת ה -->
+        <a class="navbar-brand" href="#">IOT Irrigation System</a><!--קישור לדף הראשי בתור לוגו או שם האתר-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--כפתור התפריט, משמש להצגת תפריט הניווט במסך קטן-->
+            <span class="navbar-toggler-icon"></span>
+        </button><!--סיום הכפתור-->
+        <div class="collapse navbar-collapse" id="navbarNav"><!--אזור התפריט, מכיל את כל פרטי התפריט-->
+            <ul class="navbar-nav ml-auto"><!-- רשימת פרטי התפריט-->
+                <li class="nav-item"><!--הגדרת הפריט-->
+                    <a class="nav-link" href="homepage.html"><i class="fas fa-home"></i> Home</a><!--קישור לדף הראשי עם אייקון של בית-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--הגדרת הפריט-->
+                    <a class="nav-link" href="about us.html"><i class="fas fa-info-circle"></i> About us</a><!--קישור לדף אודות עם אייקון של מידע-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--הגדרת הפריט-->
+                    <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a><!--קישור לדף גלריה עם אייקון של תמונות-->
+                </li><!--סיום פריט-->
+                <li class="nav-item"><!--הגדרת הפריט-->
+                    <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact us</a><!--קישור לדף יצירת קשר עם אייקון של מייל-->
+                </li><!--סיום פריט-->
+            </ul><!--סיום הרשימה-->
+        </div><!--סיום התפריט-->
+    </nav><!--Navbar סיום הגדרת ה-->
+
+    <!-- Content Section -->
+    <div class="container"><!--הגדרת אזור קיבולת קבועה לתוכן הדף, זה מסייע להכניס תוכן בצורה מסודרת-->
+        <h1 id="koteretgallery">About Us</h1><!--כותרת ראשית המתארת את העמוד -->
+        <p id="piska"><!--פסיקה המכילה טקסט המתאר את פרויקטנו-->
+            Our project is a smart irrigation system that refers to the measurement of soil moisture in several places and performs irrigation operations according to the result of the soil moisture sample.
+            The role of the system is to improve irrigation efficiency, save water and prevent unnecessary waste of resources.
+            The principle of operation of the system is automatic watering as soon as the moisture level in the soil has dropped beyond the predetermined value for the system.
+            The importance of the IOT in this project is expressed in the fact that it allows us to receive information in real time and to activate the system automatically and remotely based on the information received and the pre-defined parameters.
+        </p><!--סיום פסיקה-->
+        <table class="table" id="tableABOUT"><!--הגדרת טבלה-->
+          <thead><!--ראש הטבלה-->
+            <tr><!--שורה ראשונה-->
+              <th scope="col">The sensor type</th><!--כותרת של עמודה בטבלה- סוג החיישן-->
+              <th scope="col">The number of sensors</th><!--כותרת של עמודה בטבלה- נתוני החיישן-->
+            </tr><!---סיום שורה ראשונה-->
+          </thead><!--סיום ראש הטבלה-->
+          <tbody><!--גוף הטבלה-->
+            <tr><!--הגדרת שורה-->
+              <td>Water level sensor</td><!--חיישן גובה מים-->
+              <td><p id="waterLevelSensor"></p></td><!--הנתונים שהחיישן מראה-->
+            </tr><!--סיום שורה-->
+            <tr><!--הגדרת שורה-->
+              <td>Soil moisture sensor</td><!--חיישן לחות באדמה-->
+              <td><p id="soilMoistureSensor"></p></td><!--הנתונים שהחיישן מראה-->
+            </tr><!--סיום שורה-->
+            <tr><!--הגדרת שורה-->
+              <td>Ultrasonic sensor</td><!--חיישן מרחק-->
+              <td><p id="ultrasonicSensor"></p></td><!--הנתונים שהחיישן מראה-->
+            </tr><!--סיום שורה-->
+          </tbody><!--סיום גוף הטבלה-->
+</tbody>
+</table>
+            </tr>
+            <tr>
+        </table>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><!--JavaScript  הפעלת ספרייה אשר משפרת תכונות ועוזרת בכתיבת קוד של -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script><!--Bootstrap הפעלת ספרייה המשמשת לניהול חלונות קופצים, ליישום הצגת פופאים ומיקום תפריטים מתקדם ב -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script><!--הפעלת ספרייה המספקת פונקציות נוספות ותכונות עיצוב נוספות-->
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script><!--Firebase הכנסת הספרייה אל דף האינטרנט של האתר, דבר המאפשר גישה לשירותי התוכנה של -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script><!--הכנסת הספרייה לדף האינטרנט של האתר, דבר המספק כלים לניהול משתמשים-->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script><!--באופן יעיל Firebase הכנסת הספרייה אל דף האינטרנט של האתר, דבר המאפשר שמירה וקריאה מבסיס הנתונים של -->
+    <script src="koren.js"></script>

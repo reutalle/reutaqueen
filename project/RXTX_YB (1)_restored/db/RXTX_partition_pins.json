@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "piazo",
+					"strict" : false
+				},
+				{
+					"name" : "pump",
+					"strict" : false
+				},
+				{
+					"name" : "trig_out",
+					"strict" : false
+				},
+				{
+					"name" : "highA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "highA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "highA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "highA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "highA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "highA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "highA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[7]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lowA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lowA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lowA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lowA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lowA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lowA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lowA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lowB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lowB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lowB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lowB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lowB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lowB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lowB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "adc_clk",
+					"strict" : false
+				},
+				{
+					"name" : "RX",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity uln_1 is
+port(
+	sw : in bit;
+	piezo, pump : out bit
+);
+end;
+
+architecture behave of uln_1 is
+begin
+pump<='1' when sw='1' else 0;
+piezo<='1' when sw='1' else 0;
+end behave;

@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity WaterPumpController is
+    port (
+        rx_in: in std_logic_vector(7 downto 0),
+        pump_control: out std_logic
+    );
+end entity;
+
+architecture Behavioral of WaterPumpController is
+    signal pump_control_internal : std_logic := '0'; -- Initial pump control state
+begin
+    -- Control logic: Activate pump when rx_in is "00000001"
+    process (rx_in)
+    begin
+        if rx_in = "00000001" then
+            pump_control_internal <= '1'; -- Activate pump
+        else
+            pump_control_internal <= '0'; -- Deactivate pump
+        end if;
+    end process;
+
+    -- Output the pump control signal
+    pump_control <= pump_control_internal;
+
+end Behavioral;
